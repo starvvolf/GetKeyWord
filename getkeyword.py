@@ -1,4 +1,5 @@
 import sys
+import time
 import urllib.request
 from bs4 import BeautifulSoup
 from PyQt5 import uic
@@ -40,6 +41,7 @@ class MainClass(QMainWindow, form_class):
         word_counts = {}
         for i in range(0, self.count):
             keywords=self.get_title(self.query, (i*30)+1)
+            time.sleep(0.5)
             for word in keywords:
                 if word not in word_counts:
                     word_counts[word]=0
