@@ -61,7 +61,16 @@ pyqt5-sip                 12.13.0
 ## Reference
 
 
+https://youtu.be/OEf_UESjRxo?si=N988mHohGlQ1F9dM
+
+
 https://jy-tblog.tistory.com/26
 
 
 google Bard
+
+
+위 코드는 유튜브, 블로그에서 나오는 코드들과 google Bard를 기반으로 만들어진 코드입니다.
+
+
+##
