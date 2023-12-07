@@ -57,6 +57,9 @@ pyqt                      5.15.10
 pyqt5-sip                 12.13.0
 
 
+ui: QtDesigner 5.11.1
+
+
 
 ## Reference
 
@@ -67,10 +70,11 @@ https://youtu.be/OEf_UESjRxo?si=N988mHohGlQ1F9dM
 https://jy-tblog.tistory.com/26
 
 
-google Bard
+google Bard:  https://bard.google.com/
 
 
 위 코드는 유튜브, 블로그에서 나오는 코드들과 google Bard를 기반으로 만들어진 코드입니다.
 
 
-##
+
+
