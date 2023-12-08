@@ -1,6 +1,7 @@
 import sys
 import time
 import urllib.request
+from os import environ
 from bs4 import BeautifulSoup
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTextEdit, QSpinBox, QListWidget
@@ -8,6 +9,13 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QTe
 # UI파일 연결
 # UI파일 위치를 잘 적어 넣어준다.
 form_class = uic.loadUiType("projectUI.ui")[0]
+
+#해상도 달라도 글자크기 고정
+def suppress_qt_warnings():
+    environ["QT_DEVICE_PIXEL_RATIO"]="0"
+    environ["QT_AUTO_SCREEN_SCALE_FACTOR"]="1"
+    environ["QT_SCREEN_SCALE_FACTORS"]="1"
+    environ["QT_SCALE_FACTOR"]="1"
 
 def extract_keywords(title):
       keywords = []
@@ -75,6 +83,9 @@ class MainClass(QMainWindow, form_class):
     
         
 if __name__ == "__main__" :
+    
+    suppress_qt_warnings()
+    
     app = QApplication(sys.argv) 
     window = MainClass() 
     app.exec_()
